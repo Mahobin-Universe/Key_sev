@@ -1,0 +1,25 @@
+{
+  "name": "Server Api",
+  "version": "1.0.0",
+  "description": "Vercel API wrapper for KeyAuth API v1.3 with 2FA support",
+  "main": "keyauth.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "vercel start"
+  },
+  "keywords": [
+    "keyauth",
+    "api",
+    "vercel",
+    "2fa",
+    "authentication"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
