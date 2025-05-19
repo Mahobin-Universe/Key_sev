@@ -179,7 +179,31 @@ export class KeyAuth {
       })
     );
   }
+  async enable2FA(secret) {
+    return await this._withRetry(() =>
+      this._post({
+        type: 'enable2fa',
+        secret,
+        name: this.name,
+        ownerid: this.ownerid,
+        sessionid: this.sessionid,
+      })
+    );
+  }
 
+  async disable2FA(token) {
+    return await this._withRetry(() =>
+      this._post({
+        type: 'disable2fa',
+        token,
+        name: this.name,
+        ownerid: this.ownerid,
+        sessionid: this.sessionid,
+      })
+    );
+  }
+  
+  
   async _withRetry(fn) {
     await this._ensureInit();
     let response = await fn();
