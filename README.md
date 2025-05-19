@@ -30,9 +30,9 @@ This project is a professional Vercel API wrapper for the AuthAPI version 1.3, i
 1. Clone this repository:
 
 ```bash
-git clone <your-repo-url>
-cd your-project-folder
-````
+git clone https://github.com/Mahobin-Universe/Key_sev.git
+cd key_sev
+```
 
 2. Install dependencies:
 
